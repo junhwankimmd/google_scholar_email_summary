@@ -131,7 +131,7 @@ def format_date(timestamp_ms):
 def main():
     service = authenticate_gmail_api()
     query = 'from:scholaralerts-noreply@google.com'
-    messages = service.users().messages().list(userId='me', q=query, maxResults=2).execute().get('messages', [])
+    messages = service.users().messages().list(userId='me', q=query, maxResults=10).execute().get('messages', [])
 
     if not messages:
         print("No messages found.")
