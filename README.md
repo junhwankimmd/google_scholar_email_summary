@@ -1,5 +1,7 @@
 # Google Scholar Mailing Literature Summary
 
+Your alert emails from Google Scholar are summarized into a markdown file that has information of study titles, lists of authors, links, PMIDs, and abstracts.
+
 ## Prerequisites
 
 Before you can use this script, ensure that the following are set up on your system:
