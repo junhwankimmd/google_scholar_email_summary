@@ -37,13 +37,13 @@ Before you can use this script, ensure that the following are set up on your sys
 
 1. **`maxResults` Parameter**:
    - The script fetches a specific number of emails using the Gmail API, defined by the `maxResults` parameter.
-   - By default, this value is set to 30. You can adjust it to fetch more or fewer emails by modifying the following line in the script:
+   - By default, this value is set to 10. You can adjust it to fetch more or fewer emails by modifying the following line in the script:
 
     ```python
-    messages = service.users().messages().list(userId='me', q=query, maxResults=30).execute().get('messages', [])
+    messages = service.users().messages().list(userId='me', q=query, maxResults=10).execute().get('messages', [])
     ```
 
-    - Change `30` to your desired number of emails to retrieve.
+    - Change `10` to your desired number of emails to retrieve.
 
 ## Known Issues
 
